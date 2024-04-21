@@ -2,22 +2,23 @@
    - [deep_training](https://github.com/ssbuild/deep_training)
 
 ```text
-    11-27 yi modle_type change to llama
-    11-15 support load custom model , only modify config/constant_map.py
-    10-09 support accelerator trainer
-    10-07 support colossalai trainer
-    09-26 support transformers trainer
-    08-16 推理可选使用 Rope NtkScale , 不训练扩展推理长度
-    08-02 增加 muti lora infer 例子, 手动升级 aigc_zoo , pip install -U git+https://github.com/ssbuild/aigc_zoo.git --force-reinstall --no-deps
-    06-13 fix llama resize_token_embeddings
-    06-01 support deepspeed training for lora adalora prompt,0.1.9 和 0.1.10合并
-    05-27 add qlora transformers>=4.30
-    05-24 fix p-tuning-v2 load weight bugs
-    05-12 fix lora int8 多卡训练 , ppo training move to https://github.com/ssbuild/rlhf_llm
-    05-02 增加p-tuning-v2
-    04-28 deep_training 0.1.3 pytorch-lightning 改名 ligntning ，旧版本 deep_training <= 0.1.2
-    04-23 增加lora merge权重（修改infer_lora_finetuning.py enable_merge_weight 选项）
-    04-11 升级 lora , 增加adalora
+    2024-04-22 简化配置
+    2023-11-27 yi modle_type change to llama
+    2023-11-15 support load custom model , only modify config/constant_map.py
+    2023-10-09 support accelerator trainer
+    2023-10-07 support colossalai trainer
+    2023-09-26 support transformers trainer
+    2023-08-16 推理可选使用 Rope NtkScale , 不训练扩展推理长度
+    2023-08-02 增加 muti lora infer 例子, 手动升级 aigc_zoo , pip install -U git+https://github.com/ssbuild/deep_training.zoo.git --force-reinstall --no-deps
+    2023-06-13 fix llama resize_token_embeddings
+    2023-06-01 support deepspeed training for lora adalora prompt,0.1.9 和 0.1.10合并
+    2023-05-27 add qlora transformers>=4.30
+    2023-05-24 fix p-tuning-v2 load weight bugs
+    2023-05-12 fix lora int8 多卡训练 , ppo training move to https://github.com/ssbuild/rlhf_llm
+    2023-05-02 增加p-tuning-v2
+    2023-04-28 deep_training 0.1.3 pytorch-lightning 改名 ligntning ，旧版本 deep_training <= 0.1.2
+    2023-04-23 增加lora merge权重（修改infer_lora_finetuning.py enable_merge_weight 选项）
+    2023-04-11 升级 lora , 增加adalora
 ```
    
 

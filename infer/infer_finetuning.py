@@ -8,16 +8,16 @@ sys.path.append(os.path.join(os.path.dirname(__file__),'..'))
 import torch
 from deep_training.data_helper import ModelArguments
 from transformers import HfArgumentParser, AutoConfig
-from data_utils import train_info_args, NN_DataHelper, get_deepspeed_config,build_template
-from aigc_zoo.model_zoo.llm.llm_model import MyTransformer
-from aigc_zoo.utils.llm_generate import Generate
+from data_utils import config_args, NN_DataHelper, get_deepspeed_config,build_template
+from deep_training.zoo.model_zoo.llm.llm_model import MyTransformer
+from deep_training.zoo.utils.llm_generate import Generate
 
 deep_config = get_deepspeed_config()
 
 
 if __name__ == '__main__':
     parser = HfArgumentParser((ModelArguments,))
-    (model_args,) = parser.parse_dict(train_info_args, allow_extra_keys=True)
+    (model_args,) = parser.parse_dict(config_args, allow_extra_keys=True)
 
     dataHelper = NN_DataHelper(model_args)
     tokenizer, _, _,_= dataHelper.load_tokenizer_and_config()

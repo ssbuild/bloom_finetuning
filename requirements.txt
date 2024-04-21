@@ -3,4 +3,4 @@ deepspeed
 bitsandbytes>=0.39
 accelerate>=0.20
 cpm-kernels
-git+https://github.com/ssbuild/aigc_zoo#egg=aigc_zoo
+git+https://github.com/ssbuild/deep_training#egg=deep_training

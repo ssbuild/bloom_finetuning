@@ -6,11 +6,11 @@ from deep_training.utils.hf import register_transformer_model, register_transfor
     register_transformer_tokenizer
 from transformers import AutoModelForCausalLM
 from deep_training.nlp.models.rellama.modeling_llama import LlamaForCausalLM
-from aigc_zoo.model_zoo.bluelm.llm_model import MyBlueLMForCausalLM,BlueLMTokenizer,BlueLMConfig
-from aigc_zoo.model_zoo.xverse.llm_model import MyXverseForCausalLM,XverseConfig
-from aigc_zoo.model_zoo.internlm.llm_model import MyInternLMForCausalLM,InternLMTokenizer,InternLMConfig
-from aigc_zoo.model_zoo.skywork.llm_model import MySkyworkForCausalLM,SkyworkConfig,SkyworkTokenizer
-# from aigc_zoo.model_zoo.yi.llm_model import MyYiForCausalLM,YiConfig,YiTokenizer
+from deep_training.zoo.model_zoo.bluelm.llm_model import MyBlueLMForCausalLM,BlueLMTokenizer,BlueLMConfig
+from deep_training.zoo.model_zoo.xverse.llm_model import MyXverseForCausalLM,XverseConfig
+from deep_training.zoo.model_zoo.internlm.llm_model import MyInternLMForCausalLM,InternLMTokenizer,InternLMConfig
+from deep_training.zoo.model_zoo.skywork.llm_model import MySkyworkForCausalLM,SkyworkConfig,SkyworkTokenizer
+# from deep_training.zoo.model_zoo.yi.llm_model import MyYiForCausalLM,YiConfig,YiTokenizer
 
 __all__ = [
     "module_setup"
