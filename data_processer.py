@@ -102,8 +102,20 @@ class PromptBuilder:
             prompt += answer
         return prompt
 
+    @classmethod
+    def build_template_qwen2(cls, query, answer=None, prefix=None, history=None):
+        prompt = prefix or '<|im_start|>system\nYou are a helpful assistant<|im_end|>\n'
+        if history is not None:
+            for q, a in history:
+                prompt += '<|im_start|>' + 'user' + '\n' + q + '<|im_end|>'
+                prompt += '<|im_start|>' + 'assistant' + '\n' + a + '<|im_end|>'
+
+        prompt += '<|im_start|>' + 'assistant' + '\n'
+        if answer is not None:
+            prompt += answer
+        return prompt
 #切换模板
-build_template = PromptBuilder.build_template_default
+build_template = PromptBuilder.build_template_qwen2
 
 
 class TokenIdsMaker:

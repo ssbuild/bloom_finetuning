@@ -2,6 +2,7 @@
    - [deep_training](https://github.com/ssbuild/deep_training)
 
 ```text
+    2024-04-23 support qwen2
     2024-04-22 简化配置
     2023-11-27 yi modle_type change to llama
     2023-11-15 support load custom model , only modify config/constant_map.py
@@ -37,6 +38,10 @@ pip install csrc/rotary
 
 ## weigtht select one is suitable for you
 支持且不限于以下权重    
+- [Qwen1.5-1.8B-Chat](https://huggingface.co/Qwen/Qwen1.5-1.8B-Chat)
+- [Qwen1.5-7B-Chat](https://huggingface.co/Qwen/Qwen1.5-7B-Chat)
+- [Qwen1.5-14B-Chat](https://huggingface.co/Qwen/Qwen1.5-14B-Chat)
+- [Qwen1.5-32B-Chat](https://huggingface.co/Qwen/Qwen1.5-32B-Chat)
 - [zephyr-7b-beta](https://huggingface.co/HuggingFaceH4/zephyr-7b-beta)
 - [mistral-7b-sft-beta](https://huggingface.co/HuggingFaceH4/mistral-7b-sft-beta)
 - [Yi-6B](https://huggingface.co/01-ai/Yi-6B) 
