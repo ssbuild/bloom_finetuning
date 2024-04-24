@@ -22,6 +22,7 @@ from deep_training.zoo.constants.define import (TRANSFORMERS_MODELS_TO_LORA_TARG
 TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING["mistral"] = ["q_proj", "v_proj"]
 TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING["lingowhale"] = ["qkv_proj"]
 TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING["qwen2"] = ["q_proj", "v_proj"]
+TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING["qwen2_moe"] = ["q_proj", "v_proj"]
 
 
 from deep_training.utils.wrapper import load_yaml

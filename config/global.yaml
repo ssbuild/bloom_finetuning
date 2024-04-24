@@ -6,7 +6,8 @@ global_args:
   load_in_bit: 0
   config_merge: {}
   # ************* 模型权重 *********************
-  model_name: Qwen1.5-1.8B-Chat
+#  model_name: Qwen1.5-1.8B-Chat
+  model_name: Qwen1.5-MoE-A2.7B
 
   # one of auto 16 bf16 32
   precision: auto
@@ -38,6 +39,12 @@ global_models_mapper:
     model_name_or_path: /data/nlp/pre_models/torch/qwen2/Qwen1.5-1.8B-Chat
     config_name: /data/nlp/pre_models/torch/qwen2/Qwen1.5-1.8B-Chat
     tokenizer_name: /data/nlp/pre_models/torch/qwen2/Qwen1.5-1.8B-Chat
+
+  Qwen1.5-MoE-A2.7B:
+    model_type: qwen2_moe
+    model_name_or_path: /data/nlp/pre_models/torch/qwen2/Qwen1.5-MoE-A2.7B
+    config_name: /data/nlp/pre_models/torch/qwen2/Qwen1.5-MoE-A2.7B
+    tokenizer_name: /data/nlp/pre_models/torch/qwen2/Qwen1.5-MoE-A2.7B
 
 
   CausalLM-14B:
